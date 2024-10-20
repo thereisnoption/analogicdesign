@@ -1,0 +1,15 @@
+** sch_path: /home/alex/mbkmpolytron/ring_oscillator/ring_oscillator.sch
+**.subckt ring_oscillator vvdd vgnd out
+*.ipin vvdd
+*.ipin vgnd
+*.opin out
+x1 vvdd net1 net2 vgnd inverter
+x2 vvdd net2 out vgnd inverter
+x3 vvdd out net1 vgnd inverter
+**.ends
+
+* expanding   symbol:  /home/alex/mbkmpolytron/inverter/inverter.sym # of pins=4
+** sym_path: /home/alex/mbkmpolytron/inverter/inverter.sym
+** sch_path: /home/alex/mbkmpolytron/inverter/inverter.sch
+
+.end
